@@ -17,12 +17,13 @@ public class SecurityController {
 
     @Autowired
     SecurityService securityService;
-    
+    //登录页面
     @RequestMapping(value = {"login", "/"}, method = RequestMethod.GET)
     public String toLogin() {
         return "login";
     }
-    
+
+    //校验
     @RequestMapping(value = "login", method = RequestMethod.POST)
     @ResponseBody
     public ResponseJson login(HttpSession session,

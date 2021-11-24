@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import pers.kanarien.chatroom.model.vo.ResponseJson;
+import pers.kanarien.chatroom.service.FileUploadService;
 
 @Controller
 @RequestMapping("/chatroom")
